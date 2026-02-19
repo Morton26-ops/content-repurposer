@@ -25,6 +25,26 @@
 
     --radius: 6px;
     --radius-lg: 10px;
+
+    --grain-opacity: 0.03;
+}
+
+/* ── Light Theme ────────────────────────────────────── */
+
+[data-theme="light"] {
+    --bg: #f5f2ed;
+    --surface: #ffffff;
+    --surface-raised: #eae7e2;
+    --border: #d5d0c9;
+    --border-hover: #bfb9b1;
+    --text: #1a1816;
+    --text-dim: #7a756e;
+    --accent: #d14e1f;
+    --accent-glow: rgba(209, 78, 31, 0.12);
+    --green: #1a9e4a;
+    --red: #c9321a;
+
+    --grain-opacity: 0.02;
 }
 
 html {
@@ -40,6 +60,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ── Grain Overlay ──────────────────────────────────── */
@@ -49,7 +70,7 @@ body {
     inset: 0;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.03;
+    opacity: var(--grain-opacity);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 256px;
@@ -64,10 +85,63 @@ header {
     animation: fadeDown 0.6s ease-out;
 }
 
+.header-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
 .logo {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
+}
+
+/* ── Theme Toggle ──────────────────────────────────── */
+
+.theme-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-dim);
+    cursor: pointer;
+    padding: 0.4rem 0.55rem;
+    font-size: 1.1rem;
+    line-height: 1;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    border-color: var(--border-hover);
+    color: var(--text);
+    background: var(--surface-raised);
+}
+
+.theme-icon {
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theme-icon--light {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+[data-theme="light"] .theme-icon--dark {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+[data-theme="light"] .theme-icon--light {
+    opacity: 1;
+    transform: rotate(0) scale(1);
 }
 
 .logo-mark {
