@@ -281,7 +281,7 @@ main {
 
 .platform-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.6rem;
 }
 
@@ -508,7 +508,7 @@ main {
     .logo-text { font-size: 1.5rem; }
 
     .platform-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tab {

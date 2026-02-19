@@ -2,7 +2,7 @@
 
 Transform long-form content into platform-specific short-form posts using Claude API.
 
-Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, LinkedIn post, Instagram caption, TikTok script, or email newsletter streamed back in real time.
+Paste a YouTube URL, blog article, or raw text — get content for 12 platforms streamed back in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.129-green)
@@ -14,7 +14,7 @@ Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, Linke
 ## Features
 
 - **3 input types** — YouTube videos (transcript extraction), article URLs (web scraping), pasted text
-- **5 output formats** — Twitter/X threads, LinkedIn posts, Instagram captions, TikTok scripts, email newsletters
+- **12 output formats** — Twitter/X, LinkedIn, Instagram, TikTok, Newsletter, Facebook, Reddit, Threads, Pinterest, YouTube, Bluesky, Reels
 - **Real-time streaming** — SSE streaming shows text appearing word-by-word
 - **Dark/light mode** — Toggle with localStorage persistence
 - **One-page UI** — Editorial theme, tab switching, copy-to-clipboard
@@ -74,6 +74,13 @@ content-repurposer/
 | **Instagram** | <300 char body, CTA, 15-25 hashtags |
 | **TikTok** | 150-300 word script, hook + [PAUSE] markers, 60-90 sec |
 | **Newsletter** | 400-600 words, subject line, bold section headers, key takeaway |
+| **Facebook** | 500-800 chars, storytelling hook, question CTA, 1-3 hashtags |
+| **Reddit** | Title + 300-600 word body, authentic tone, TL;DR, no emojis |
+| **Threads** | 3-7 posts, <500 chars each, casual tone, no hashtags |
+| **Pinterest** | 200-500 chars, SEO keywords, save/click CTA |
+| **YouTube** | Description + timestamps + key takeaways, 5-10 tags |
+| **Bluesky** | 3-8 posts, 300 chars each, witty/intellectual tone |
+| **Reels** | 100-200 word script, [CUT] + [TEXT ON SCREEN] markers, 30-60 sec |
 
 ## Tech Stack
 

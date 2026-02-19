@@ -74,6 +74,114 @@ Rules:
 
 Content to repurpose:
 {content}""",
+
+    "facebook": """Transform the following content into a Facebook post.
+
+Rules:
+- Total length: 500-800 characters
+- Start with a hook that makes people stop scrolling
+- Use storytelling — personal angle or relatable framing
+- Short paragraphs (1-2 sentences) with line breaks between them
+- Include a question or call to action at the end to drive comments
+- Use 1-3 emojis naturally (not forced)
+- End with 1-3 hashtags max (Facebook penalizes hashtag stuffing)
+- Warm, conversational tone — like talking to friends
+
+Content to repurpose:
+{content}""",
+
+    "reddit": """Transform the following content into a Reddit post.
+
+Rules:
+- Start with a compelling title on its own line, prefixed with "Title: "
+- Follow with the post body (300-600 words)
+- Write in first person, conversational tone
+- No hashtags, no emojis — Reddit hates both
+- Be genuine and add value — Reddit rewards authenticity
+- Structure with clear paragraphs and use bullet points or numbered lists where helpful
+- End with a discussion prompt or question to invite comments
+- Include a "TL;DR" at the very end (1-2 sentences)
+- Tone: knowledgeable community member sharing insights, not a marketer
+
+Content to repurpose:
+{content}""",
+
+    "threads": """Transform the following content into a Threads post series.
+
+Rules:
+- Create 3-7 posts in a thread
+- Each post should be under 500 characters
+- Number each post (1/, 2/, etc.)
+- First post must be a strong hook — casual and scroll-stopping
+- More conversational and casual than Twitter — think talking to a friend
+- Use line breaks for readability within each post
+- Emojis are welcome but don't overdo it (1-2 per post max)
+- Last post should be a takeaway or CTA
+- No hashtags (Threads de-prioritizes them)
+
+Content to repurpose:
+{content}""",
+
+    "pinterest": """Transform the following content into a Pinterest pin description.
+
+Rules:
+- Total length: 200-500 characters
+- Start with an attention-grabbing first sentence (this shows in preview)
+- Include 3-5 relevant keywords naturally woven into the description (Pinterest is a search engine)
+- Use a clear call to action ("Click to read more", "Save for later", "Try this today")
+- Add 2-5 relevant hashtags at the end
+- Tone: helpful, inspirational, actionable
+- Write as if describing the value someone will get by clicking through
+
+Content to repurpose:
+{content}""",
+
+    "youtube": """Transform the following content into a YouTube video description.
+
+Rules:
+- Start with a compelling 2-3 sentence summary (first 2 lines show before "Show more")
+- Add a blank line, then a detailed description (150-300 words) expanding on the content
+- Include a "Timestamps" section with 5-8 timestamps in the format "0:00 - Topic"
+- Add a "Key Takeaways" section with 3-5 bullet points
+- End with a CTA section: "Like, subscribe, and hit the bell" + relevant links placeholder
+- Include 5-10 relevant tags/hashtags on the final line
+- Tone: energetic and informative
+
+Content to repurpose:
+{content}""",
+
+    "bluesky": """Transform the following content into a Bluesky thread.
+
+Rules:
+- Create 3-8 posts
+- Each post MUST be 300 characters or fewer (hard limit)
+- Number each post (1/, 2/, etc.)
+- First post must be a compelling hook
+- Write in a smart, conversational tone — Bluesky skews tech-savvy and witty
+- No hashtags (Bluesky doesn't use them for discovery)
+- Use line breaks within posts for readability
+- Last post should be a takeaway, CTA, or witty closer
+- More intellectual/dry humor welcome compared to other platforms
+
+Content to repurpose:
+{content}""",
+
+    "reels": """Transform the following content into an Instagram/Facebook Reels script.
+
+Rules:
+- Total length: 100-200 words (30-60 second video)
+- Start with a powerful hook in the FIRST line — must grab attention in 1-2 seconds
+- Use quick, punchy sentences — faster paced than TikTok
+- Structure: Hook → Quick Setup → 2-3 Rapid Points → Punchline/CTA
+- Include [CUT] markers for visual transitions between scenes
+- Include [TEXT ON SCREEN: "..."] markers for text overlays
+- Write for vertical video, direct-to-camera style
+- End with a CTA ("Follow for more", "Save this", "Share with a friend")
+- Add 5-10 hashtags on a final line (Reels still benefit from hashtags)
+- Tone: fast, energetic, visual
+
+Content to repurpose:
+{content}""",
 }
 
 
