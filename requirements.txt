@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+jinja2
+sse-starlette
+python-multipart
+anthropic
+youtube-transcript-api
+requests
+beautifulsoup4
+pydantic-settings
+python-dotenv
