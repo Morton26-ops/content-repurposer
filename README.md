@@ -8,6 +8,9 @@ Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, Linke
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.129-green)
 ![Claude](https://img.shields.io/badge/Claude-Opus%204.6-orange)
 
+![Screenshot](screenshot.png)
+<!-- To add a screenshot: take a screenshot of http://localhost:8000, save as screenshot.png in the project root, then commit -->
+
 ## Features
 
 - **3 input types** — YouTube videos (transcript extraction), article URLs (web scraping), pasted text
