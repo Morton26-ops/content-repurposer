@@ -44,6 +44,36 @@ Rules:
 
 Content to repurpose:
 {content}""",
+
+    "tiktok": """Transform the following content into a TikTok video script.
+
+Rules:
+- Total length: 150-300 words (60-90 second video)
+- Start with a powerful hook in the first line (the first 3 seconds decide if viewers stay)
+- Use a conversational, energetic, direct-to-camera tone
+- Structure: Hook → Setup → Key Points (2-3 max) → Punchline/CTA
+- Write in short, spoken sentences — not written prose
+- Include [PAUSE] markers where dramatic pauses would go
+- End with a strong CTA ("Follow for more", "Save this", "Comment your take")
+- Add 3-5 hashtags on a final line
+
+Content to repurpose:
+{content}""",
+
+    "newsletter": """Transform the following content into an email newsletter section.
+
+Rules:
+- Total length: 400-600 words
+- Start with a compelling subject line on its own line, prefixed with "Subject: "
+- Follow with a brief personal greeting/intro (1-2 sentences, warm and direct)
+- Break the content into 2-3 scannable sections with bold section headers
+- Use short paragraphs (2-3 sentences max)
+- Include a "Key Takeaway" or "TL;DR" callout near the end (one sentence)
+- End with a single clear call to action (reply, click, share)
+- Tone: knowledgeable friend writing you an email, not a corporation
+
+Content to repurpose:
+{content}""",
 }
 
 
