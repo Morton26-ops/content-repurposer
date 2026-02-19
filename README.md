@@ -2,7 +2,7 @@
 
 Transform long-form content into platform-specific short-form posts using Claude API.
 
-Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, LinkedIn post, or Instagram caption streamed back in real time.
+Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, LinkedIn post, Instagram caption, TikTok script, or email newsletter streamed back in real time.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.129-green)
@@ -11,9 +11,10 @@ Paste a YouTube URL, blog article, or raw text — get a Twitter/X thread, Linke
 ## Features
 
 - **3 input types** — YouTube videos (transcript extraction), article URLs (web scraping), pasted text
-- **3 output formats** — Twitter/X threads, LinkedIn posts, Instagram captions
+- **5 output formats** — Twitter/X threads, LinkedIn posts, Instagram captions, TikTok scripts, email newsletters
 - **Real-time streaming** — SSE streaming shows text appearing word-by-word
-- **One-page UI** — Dark editorial theme, tab switching, copy-to-clipboard
+- **Dark/light mode** — Toggle with localStorage persistence
+- **One-page UI** — Editorial theme, tab switching, copy-to-clipboard
 
 ## Quick Start
 
@@ -68,6 +69,8 @@ content-repurposer/
 | **Twitter/X** | 3-10 tweets, 280 chars each, numbered, hook first |
 | **LinkedIn** | 1000-1300 chars, hook line, short paragraphs, 3-5 hashtags |
 | **Instagram** | <300 char body, CTA, 15-25 hashtags |
+| **TikTok** | 150-300 word script, hook + [PAUSE] markers, 60-90 sec |
+| **Newsletter** | 400-600 words, subject line, bold section headers, key takeaway |
 
 ## Tech Stack
 
